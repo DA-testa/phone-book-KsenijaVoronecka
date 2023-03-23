@@ -28,7 +28,8 @@ def process_queries(queries):
             # we should rewrite contact's name
             for key, value in phone_book.items():
                 if value == cur_query.number:
-                    phone_book[key] = cur_query.name
+                    phone_book.pop(key)
+                    phone_book[cur_query.name] = value
                     break
             else: # otherwise, just add it
                 phone_book[cur_query.name] = cur_query.number
