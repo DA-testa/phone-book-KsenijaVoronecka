@@ -1,4 +1,5 @@
-# python3
+# python3 main.py
+# Ksenija Voronecka 221RDC056 (RDCP0)
 
 class Query:
     def __init__(self, query):
